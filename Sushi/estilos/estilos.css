@@ -1,0 +1,308 @@
+*{
+    box-sizing: border-box;
+    margin: auto; 
+}
+
+/* CSS DE NAVBAR */
+header{
+    width: 1366px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    top: 10px;
+}
+
+nav{
+    
+    width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 20px;
+    display: flex;
+    font-size: 28px;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+.promo{
+    height: 30px;
+    width: 1366px;
+    background-image: url(../imagenes/fondo2.jpg);
+}
+
+
+a:hover{
+    transform: scale(1.40);
+    transition: .9s;
+    
+}
+
+.barra{
+    height: 70px;
+    width: 1366px;
+    background-image: url(../imagenes/fondo3.png);
+    
+}
+
+/* Animacion */
+
+.slider {
+    width: 1100px;
+    height: 25px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 700px;
+}
+
+.slider .slide img {
+    width: 100%;
+   
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+li img{
+    height: 80px;
+    width: 220px;
+    
+}
+
+.menu{
+    background-image: url(../imagenes/fondo.jpg);
+    height: 100px;
+    width: 1366px;
+    display: fixed;
+}
+
+.buscador{
+    float: right;
+    margin-top: 28px;
+    padding-right: 50px;
+    display: inline-flex;
+}
+
+.buscador input{
+    width: 200px;
+    height: 30px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 5px;
+   
+}
+
+.buscador  input:hover{
+    transform: scale(1.07);
+    transition: 1s;
+   
+}
+
+.buscador::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+i{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+i:hover{
+    transform: scale(1.02);
+}
+
+.ico1{
+    display: fixed;
+    margin-left: 20px;
+    margin-right: 10px;
+    
+}
+/* FINAL DEL HEADER CSS */
+main{
+    width: 1366px;
+    height: auto;
+}
+
+.sushi-flex{
+    display: flex;
+}
+
+.sushi1{
+    display: flex;
+}
+
+.sushi2{
+    display: flex;
+}
+
+.texto-sushi img{
+    height: 180px;
+    width: 400px;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.texto-sushi img:hover{ 
+    transform: scale(1.05);
+}
+
+.foto-sushi img{
+    width: 200px;
+    height: 180px;
+}
+
+.titulos2{
+    text-align: center;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+/* FOOTER COMIENZO */
+.pie{
+    height: 200px;
+    width: 1366px;
+    background-image: url(../imagenes/fondo4.gif);
+    display: flex;
+}
+
+.redes{
+    
+    width: 645px;
+    height: 180px;
+    margin: 0;
+    padding-left: 70px;
+}
+
+.fot a{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.fot h2{
+    font-family: "Comic Neue", cursive;
+    font-weight:800;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.fot a:hover{
+    transform: none;
+}
+
+.titulo-footer{
+    width: 1366px;
+    height: 60px;
+    background-image: url(../imagenes/fondo5.gif);
+   
+}
+
+.titulo-footer img{
+height: 70px;
+display: flex;
+padding-right: 1200px;
+
+}
+
+
+
+.form{
+    width: 600px;
+    height: 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    margin-left: 250px;
+}
+
+.pie-footer{
+    height: 30px;
+    width: 1366px;
+    background-image: url(../imagenes/fondo2.jpg);
+}
+
+.foot-links{
+    display: flex;
+}
+
+.foot-links a{
+font-size: 19px;
+}
+
+.foot-links a:hover{
+    transform: none;
+    color: blue;
+}
+
+.fot a i{
+    margin: 0;
+}
+
+/* Formulario */
+
+.suscripcion{
+    width: 500px;
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 250px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41; 
+
+}
+
+/* Codigo de Julio */
+
